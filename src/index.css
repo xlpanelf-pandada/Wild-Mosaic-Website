@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "DM Serif Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Premium Artisanal Warm Palette adjusted for Geometric Balance */
+  --color-clay-50: #FDFBF9;  /* Theme warm beige background */
+  --color-clay-100: #F9F5F0; /* Soft warm ivory background */
+  --color-clay-200: #EADCD0; /* Light accent block border/fill */
+  --color-clay-300: #DCBFA5; /* Medium clay accent colors */
+  --color-clay-600: #D47A4D; /* Signature orange-terracotta primary accent */
+  --color-clay-700: #C36435; /* Active/Darker terracotta */
+  --color-clay-800: #A14F26; /* Deep terracotta core */
+  --color-clay-900: #334155; /* Slate-700 dark text/brand color used in theme footer and nav */
+  
+  --color-art-teal: #2A9F90;
+  --color-art-amber: #F2B263; /* Light orange-amber accent from design spec */
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-clay-50);
+}
+
+h1, h2, h3, h4, h5, h6, .serif {
+  font-family: var(--font-display);
+}
+
+/* Geometric Balance Custom Patterns & Shadows */
+.mosaic-pattern {
+  background-image: radial-gradient(#D47A4D 0.5px, transparent 0.5px);
+  background-size: 16px 16px;
+  opacity: 0.1;
+}
+
+.card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(212, 122, 77, 0.08);
+}
+
+/* Custom scrollbar to match warm slate-clay palette */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-clay-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-clay-300);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-[#D47A4D]);
+}

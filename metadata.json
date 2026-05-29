@@ -1,0 +1,6 @@
+{
+  "name": "Mosaic Working Studio",
+  "description": "Artisan mosaic workshop bookings, custom commission requests, and fine crafted glass art portfolio showcase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
