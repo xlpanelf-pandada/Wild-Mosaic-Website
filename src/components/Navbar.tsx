@@ -22,11 +22,11 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
   }, []);
 
   const menuItems = [
-    { label: "Workshops", href: "#workshops" },
-    { label: "Commissions", href: "#commissions" },
-    { label: "Gallery Portfolio", href: "#gallery" },
-    { label: "The Artist", href: "#about" },
-    { label: "FAQs", href: "#faq" },
+    { label: "手作工坊", href: "#workshops" },
+    { label: "定制预定", href: "#commissions" },
+    { label: "杰作画廊", href: "#gallery" },
+    { label: "主创艺术家", href: "#about" },
+    { label: "疑难答疑", href: "#faq" },
   ];
 
   return (
@@ -42,11 +42,11 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
         <div className="flex justify-between items-center">
           {/* Logo Brand */}
           <a href="#" className="flex items-center gap-2 group" id="navbar-brand-logo">
-            <span className="p-2 bg-clay-700 text-white rounded-xl shadow-md shadow-clay-700/15 group-hover:bg-clay-800 group-hover:rotate-6 transition-all duration-300">
+            <span className="p-2 bg-clay-600 text-white rounded-xl shadow-md shadow-clay-600/15 group-hover:bg-clay-700 group-hover:rotate-6 transition-all duration-300">
               <Sparkles className="w-5 h-5" />
             </span>
-            <span className="font-display font-bold text-lg sm:text-xl tracking-tight text-slate-900 group-hover:text-clay-800 transition-colors">
-              Mosaic<span className="text-clay-700 font-light font-sans ml-1 text-sm sm:text-base border-l border-slate-200 pl-1.5 uppercase tracking-wide">Working Studio</span>
+            <span className="font-display font-bold text-lg sm:text-xl tracking-tight text-slate-900 group-hover:text-clay-600 transition-colors">
+              Mosaic<span className="text-clay-600 font-light font-sans ml-1.5 text-xs sm:text-sm border-l border-slate-200 pl-1.5 uppercase tracking-wide">玛赛克艺术空间</span>
             </span>
           </a>
 
@@ -56,7 +56,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm font-medium text-slate-600 hover:text-clay-800 transition-colors uppercase tracking-wider text-[11px]"
+                className="text-xs font-semibold text-slate-600 hover:text-clay-600 transition-colors tracking-widest"
               >
                 {item.label}
               </a>
@@ -67,10 +67,10 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
           <div className="hidden md:flex items-center gap-4">
             <button
               onClick={() => onOpenBooking("booking")}
-              className="px-5 py-2.5 bg-clay-700 hover:bg-clay-800 text-white text-xs font-bold rounded-xl shadow-lg shadow-clay-700/10 hover:shadow-clay-800/15 transition-all text-center uppercase tracking-wider cursor-pointer"
+              className="px-5 py-2.5 bg-clay-600 hover:bg-clay-700 text-white text-xs font-bold rounded-xl shadow-lg shadow-clay-600/10 hover:shadow-clay-700/15 transition-all text-center tracking-widest cursor-pointer"
               id="navbar-cta-book-btn"
             >
-              Book a Class
+              预约体验课
             </button>
           </div>
 
@@ -78,7 +78,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-slate-700 hover:text-clay-800 transition-colors"
+              className="p-2 text-slate-700 hover:text-clay-600 transition-colors"
               aria-label="Toggle navigation menu"
               id="mobile-menu-toggle-btn"
             >
@@ -97,7 +97,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 rounded-xl text-sm font-medium text-slate-700 hover:bg-clay-50 hover:text-clay-800 transition-colors"
+                className="block px-3 py-2 rounded-xl text-sm font-medium text-slate-700 hover:bg-clay-50 hover:text-clay-600 transition-colors"
               >
                 {item.label}
               </a>
@@ -108,20 +108,20 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
                   setIsOpen(false);
                   onOpenBooking("booking");
                 }}
-                className="w-full py-3 bg-clay-700 hover:bg-clay-800 text-white text-xs font-bold rounded-xl uppercase tracking-wider text-center"
+                className="w-full py-3 bg-clay-600 hover:bg-clay-700 text-white text-xs font-bold rounded-xl tracking-wider text-center"
                 id="mobile-drawer-cta-booking"
               >
-                Book a Workshop Class
+                预订手作体验课
               </button>
               <button
                 onClick={() => {
                   setIsOpen(false);
                   onOpenBooking("commission");
                 }}
-                className="w-full py-3 border border-slate-200 text-slate-700 text-xs font-bold rounded-xl uppercase tracking-wider text-center bg-white"
+                className="w-full py-3 border border-slate-200 text-slate-700 text-xs font-bold rounded-xl tracking-wider text-center bg-white"
                 id="mobile-drawer-cta-commission"
               >
-                Commission Fine Art
+                预约私人艺术定制
               </button>
             </div>
           </div>

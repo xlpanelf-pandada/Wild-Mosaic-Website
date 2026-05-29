@@ -13,39 +13,39 @@ import BookingForm from "./components/BookingForm";
 const INITIAL_WORKSHOPS: Workshop[] = [
   {
     id: "class-1",
-    title: "Vibrant Stained Glass Drink Coaster Set",
-    description: "Learn glass scoring, nipping safety, and circular mandalic layout flow. Perfect for beginners to create 2 beautiful coasters in our signature sunshine colors.",
+    title: "斑斓彩色玻璃杯垫手作坊",
+    description: "学习玻璃刻划、剪切安全技巧，以及圆盘曼陀罗排布。极其适合零基础初学者，亲手制作2款如晨曦阳光般绚丽的专属艺术杯垫。",
     price: 65,
-    duration: "2 Hours Class",
-    date: "June 6, 2026",
+    duration: "2小时工匠课",
+    date: "2026年6月6日",
     seatsTotal: 8,
     seatsLeft: 3,
     level: "Beginner",
-    includes: ["Coaster boards", "Over 100 stained glass chips", "Take-home sealant bags", "Herbal teas"]
+    includes: ["实木杯垫底板", "100+ 进口大教堂彩色玻璃晶片", "便携式填缝填缝DIY工具包", "手工研磨草本热茶"]
   },
   {
     id: "class-2",
-    title: "Tuscan Stained Glass Mirror Frames",
-    description: "Design a luminous mirror frame bordered in shimmering gold, jade, and sky-blue French smalti glass. Create an elegant, heavy-duty accent mirror.",
+    title: "托斯卡纳夏影：彩色玻璃艺术镜框",
+    description: "选用金箔、翡翠绿与晴空蓝的威尼斯 Smalti 艺术玻璃，设计并制作一幅带折射光耀的复古镜面外框。亲手雕琢优雅、厚实的高级感画框镜。",
     price: 95,
-    duration: "3.5 Hours Class",
-    date: "June 13, 2026",
+    duration: "3.5小时大师课",
+    date: "2026年6月13日",
     seatsTotal: 6,
     seatsLeft: 2,
     level: "Intermediate",
-    includes: ["Dual glass nipper usage", "Authentic Venetian smalti leaf", "Spacious 14\" mirror back board", "In-studio professional grouting"]
+    includes: ["双轮省力玻璃剪切钳租用", "正宗威尼斯金箔 Smalti 手工玻璃", "14英寸重质镜面底板", "工作室画廊级专业真缝填实工艺"]
   },
   {
     id: "class-3",
-    title: "Weekend Slate Pizza Board Inlays",
-    description: "Learn how to cut robust ceramics and slate. Decorate an organic bamboo and slate serving tray with beautiful geo designs to feed your friends in style.",
+    title: "周末生活美学：石质竹盘陶瓷镶嵌",
+    description: "体验切割硬质天然陶片与板岩。在质地考究的细密竹底盘中，通过现代几何拼贴艺术，镶嵌出美轮美奂的食品级餐盘底纹，仪式感十足。",
     price: 130,
-    duration: "4 Hours Class",
-    date: "June 20, 2026",
+    duration: "4小时深度手作",
+    date: "2026年6月20日",
     seatsTotal: 8,
     seatsLeft: 6,
     level: "All Levels",
-    includes: ["Thick slate serving board", "Mosaic food-safe grout mixtures", "Tumbled volcanic stones", "Chilled refreshments"]
+    includes: ["顶级加厚板岩天然餐盘", "马赛克专用食品级防霉填缝泥", "滚圆抛光天然彩色卵石", "特调清凉手工气泡水及茶点"]
   }
 ];
 

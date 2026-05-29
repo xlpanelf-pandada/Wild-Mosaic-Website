@@ -14,56 +14,56 @@ export default function Gallery({ onOpenBooking }: GalleryProps) {
   const galleryItems: GalleryItem[] = [
     {
       id: "orig-1",
-      title: "Abstract Solar Iridescence",
+      title: "流光暖阳：抽象多维折射线",
       category: "original",
       image: originalArt1,
       dimensions: "24\" x 36\"",
-      materials: "Hand-cut Iridescent Glass, Terracotta Stone, Sea Slate",
+      materials: "极光虹彩手割玻璃、手工红陶、天然深海石板",
       isAvailableForSale: true,
       price: 1850,
     },
     {
       id: "student-1",
-      title: "Cozy Garden Sunflowers",
+      title: "向日葵花田手作盘",
       category: "student",
       image: "https://picsum.photos/seed/mosaic-sunflower/800/800",
       dimensions: "12\" x 12\"",
-      materials: "Vitreous Stained Glass, Ceramic Grout",
+      materials: "进口大教堂绚白玻璃片、防潮纯生态填砂干粉",
     },
     {
       id: "orig-2",
-      title: "Ocean Wave Crest",
+      title: "沧海碧波的叹息",
       category: "original",
       image: "https://picsum.photos/seed/mosaic-ocean/800/800",
       dimensions: "18\" x 18\"",
-      materials: "Italian Smalti, Shimmering Gold Leaf Tile, Quartz bits",
+      materials: "高级威尼斯手工 Smalti、纯手工 24K 金箔烧制马赛克、大理石原块",
       isAvailableForSale: false,
     },
     {
       id: "student-2",
-      title: "Tuscan Vineyard Plate",
+      title: "托斯卡纳葡萄庄园果盘",
       category: "student",
       image: "https://picsum.photos/seed/mosaic-grape/800/800",
       dimensions: "14\" x 14\"",
-      materials: "Tumbled Pebble, Hand-cut Ceramic Inlays",
+      materials: "手工研磨浑圆彩色天然原石、定制手剪厚实陶块",
     },
     {
       id: "orig-3",
-      title: "Desert Sunset Geometric",
+      title: "沙漠落日：几何秩序",
       category: "original",
       image: "https://picsum.photos/seed/mosaic-sunset/800/800",
       dimensions: "30\" x 30\"",
-      materials: "Mexican Smalti Tile, Limestone, Brass accents",
+      materials: "墨西哥大理石手工 Smalti、金砂白灰岩石、极简抛光黄铜骨架",
       isAvailableForSale: true,
       price: 2400,
     },
     {
       id: "student-3",
-      title: "Teal Mandalic Coffee Coaster",
+      title: "碧翠曼陀罗下午茶杯托",
       category: "student",
       image: "https://picsum.photos/seed/mosaic-coaster/800/800",
       dimensions: "6\" x 6\"",
-      materials: "Shining Metallic Beads, Glass Millifiore pieces",
+      materials: "金属防锈斑彩琉璃珠、意大利彩虹千花拉丝小料(Millifiore)",
     },
   ];
 
@@ -78,49 +78,49 @@ export default function Gallery({ onOpenBooking }: GalleryProps) {
         {/* Header Block */}
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 gap-6">
           <div className="text-left max-w-xl">
-            <span className="text-xs font-bold text-clay-700 uppercase tracking-widest font-mono">STUDIO GALLERY PORTFOLIO</span>
+            <span className="text-xs font-bold text-clay-600 uppercase tracking-widest font-mono">杰作珍藏画廊</span>
             <h2 className="text-3xl sm:text-4xl font-display font-black text-slate-900 mt-2 tracking-tight">
-              Tactile Stories in Glass & Stone
+              凝固在晶石与玻璃里的斑斓故事
             </h2>
             <p className="text-slate-500 font-sans mt-3 text-sm sm:text-base">
-              Explore the rich details of our masterworks and beginner student final achievements. Tap any block to examine the individual tile geometry.
+              探寻工作室原创传世作品与高阶新进学员的毕业佳作。轻触任意画册块面，即可极清鉴析手工用钳切割出的碎块咬合几何律动。
             </p>
           </div>
 
           {/* Nav Filtering Tabs Selector */}
           <div className="flex flex-wrap gap-1.5 p-1 bg-clay-50 border border-clay-100 rounded-xl" id="gallery-tab-container">
             <button
-              onClick={() => setActiveFilter("all")}
-              className={`px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg transition-all ${
+               onClick={() => setActiveFilter("all")}
+              className={`px-4 py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
                 activeFilter === "all"
-                  ? "bg-clay-700 text-white shadow-sm"
-                  : "text-slate-600 hover:text-clay-800"
+                  ? "bg-clay-600 text-white shadow-sm"
+                  : "text-slate-600 hover:text-clay-600"
               }`}
               id="gallery-filter-all"
             >
-              All Artworks
+              全部画幅
             </button>
             <button
               onClick={() => setActiveFilter("original")}
-              className={`px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg transition-all ${
+              className={`px-4 py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
                 activeFilter === "original"
-                  ? "bg-clay-700 text-white shadow-sm"
-                  : "text-slate-600 hover:text-clay-800"
+                  ? "bg-clay-600 text-white shadow-sm"
+                  : "text-slate-600 hover:text-clay-600"
               }`}
               id="gallery-filter-originals"
             >
-              Studio Originals
+              工坊原创原作
             </button>
             <button
               onClick={() => setActiveFilter("student")}
-              className={`px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg transition-all ${
+              className={`px-4 py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
                 activeFilter === "student"
-                  ? "bg-clay-700 text-white shadow-sm"
-                  : "text-slate-600 hover:text-clay-800"
+                  ? "bg-clay-600 text-white shadow-sm"
+                  : "text-slate-600 hover:text-clay-600"
               }`}
               id="gallery-filter-students"
             >
-              Student Creations
+              学员创意小作
             </button>
           </div>
         </div>
@@ -152,10 +152,10 @@ export default function Gallery({ onOpenBooking }: GalleryProps) {
                   </div>
                   
                   <div className="space-y-1.5 text-left text-white translate-y-3 group-hover:translate-y-0 transition-transform duration-300">
-                    <span className={`text-[9px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full ${
-                      item.category === "original" ? "bg-amber-500 text-slate-900" : "bg-teal-500 text-white"
+                    <span className={`text-[9px] font-bold tracking-widest px-2.5 py-0.5 rounded-full ${
+                      item.category === "original" ? "bg-amber-400 text-slate-900" : "bg-teal-500 text-white"
                     }`}>
-                      {item.category === "original" ? "Original Fine Art" : "Made in Class"}
+                      {item.category === "original" ? "高阶传世原作" : "体验课毕业大作"}
                     </span>
                     <h4 className="font-display font-extrabold text-base tracking-tight">{item.title}</h4>
                     <p className="text-[11px] text-slate-200 leading-normal line-clamp-1">{item.materials}</p>
@@ -166,21 +166,21 @@ export default function Gallery({ onOpenBooking }: GalleryProps) {
               {/* Lower Details Bar */}
               <div className="p-4 flex items-center justify-between">
                 <div className="text-left">
-                  <h3 className="font-display font-bold text-slate-800 text-sm group-hover:text-clay-800 transition-colors">
+                  <h3 className="font-display font-bold text-slate-800 text-sm group-hover:text-clay-600 transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-xs text-slate-400 font-sans">{item.dimensions} • {item.materials.split(",", 1)[0]}</p>
+                  <p className="text-xs text-slate-400 font-sans">{item.dimensions} • {item.materials.split("、", 1)[0]}</p>
                 </div>
 
                 {item.category === "original" && (
                   <div className="text-right">
                     {item.isAvailableForSale ? (
-                      <span className="text-xs font-bold text-clay-700 bg-clay-100/70 p-1.5 px-3 rounded-xl border border-clay-200">
+                      <span className="text-xs font-bold text-clay-600 bg-clay-100/70 p-1.5 px-3 rounded-xl border border-clay-200">
                         ${item.price}
                       </span>
                     ) : (
                       <span className="text-[9px] font-medium text-slate-400 border border-slate-200 p-1 px-2 rounded-lg">
-                        Private Collection
+                        私人家族珍藏
                       </span>
                     )}
                   </div>
@@ -194,19 +194,19 @@ export default function Gallery({ onOpenBooking }: GalleryProps) {
         <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-clay-100 border border-clay-200 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           <div className="space-y-1">
             <h4 className="text-lg font-display font-bold text-slate-900 flex items-center justify-center md:justify-start gap-2">
-              <Sparkles className="w-5 h-5 text-clay-700" />
-              Do you have a specific space in mind?
+              <Sparkles className="w-5 h-5 text-clay-600" />
+              内心早已有了想要装点的特定墙面？
             </h4>
             <p className="text-slate-500 text-xs sm:text-sm font-sans max-w-xl">
-              From colorful glass backsplashes, custom house numbers, garden paving stones, to sprawling restaurant wall murals. Claire is available to bring your custom dream art projects to life.
+              无论是色彩夺目的厨房防护壁板、专属红陶姓氏门牌、惬意的秘密花园铺石、或是气势恢宏的商用餐厅整墙重质大壁画，艺术家 Claire 都能为您点石成金。
             </p>
           </div>
           <button 
             onClick={() => onOpenBooking("commission")}
-            className="px-6 py-3 bg-clay-700 hover:bg-clay-800 text-white text-xs font-bold rounded-xl uppercase tracking-wider transition-all shadow-md flex items-center gap-2 flex-shrink-0 cursor-pointer"
+            className="px-6 py-3 bg-clay-600 hover:bg-clay-700 text-white text-xs font-bold rounded-xl uppercase tracking-wider transition-all shadow-md flex items-center gap-2 flex-shrink-0 cursor-pointer"
             id="gallery-commission-lead-btn"
           >
-            Commission a Piece <ArrowRight className="w-4 h-4" />
+            索求私人艺术定制 <ArrowRight className="w-4 h-4" />
           </button>
         </div>
 
@@ -222,12 +222,12 @@ export default function Gallery({ onOpenBooking }: GalleryProps) {
             
             {/* Modal Body */}
             <div 
-              className="relative z-10 w-full max-w-3xl overflow-hidden rounded-2xl bg-white shadow-2xl border border-slate-100"
+              className="relative z-10 w-full max-w-3xl overflow-hidden rounded-2xl bg-white shadow-2xl border border-slate-100 animate-in fade-in-50 zoom-in-95 duration-200"
               id="lightbox-container"
             >
               <button 
                 onClick={() => setLightboxItem(null)}
-                className="absolute top-4 right-4 z-20 p-2 text-slate-500 hover:text-slate-800 bg-white/95 rounded-full shadow-lg transition-colors"
+                className="absolute top-4 right-4 z-20 p-2 text-slate-500 hover:text-slate-800 bg-white/95 rounded-full shadow-lg transition-colors cursor-pointer"
                 aria-label="Close image"
                 id="lightbox-close-btn"
               >
@@ -248,10 +248,10 @@ export default function Gallery({ onOpenBooking }: GalleryProps) {
                 {/* Info and action */}
                 <div className="p-6 sm:p-8 flex flex-col justify-between text-left">
                   <div className="space-y-4">
-                    <span className={`text-[9px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full ${
+                    <span className={`text-[9px] font-bold tracking-widest px-2.5 py-1 rounded-full ${
                       lightboxItem.category === "original" ? "bg-amber-50 text-amber-800 border border-amber-200" : "bg-teal-50 text-teal-800 border border-teal-200"
                     }`}>
-                      {lightboxItem.category === "original" ? "Original Studio Masterwork" : "Beginner Student Project"}
+                      {lightboxItem.category === "original" ? "艺术珍藏原作" : "学员体验创作课毕业作品"}
                     </span>
                     
                     <h3 className="text-2xl font-display font-extrabold text-slate-900 leading-tight">
@@ -259,13 +259,13 @@ export default function Gallery({ onOpenBooking }: GalleryProps) {
                     </h3>
 
                     <div className="space-y-2 text-xs text-slate-600 font-sans">
-                      <p>📐 <strong>Dimensions Target:</strong> {lightboxItem.dimensions}</p>
-                      <p>✨ <strong>Tile Materials Used:</strong> {lightboxItem.materials}</p>
-                      <p>🕒 <strong>Curation / Dev Time:</strong> {lightboxItem.category === "original" ? "45 Craft Hours" : "3.5 Course Hours"}</p>
+                      <p>📐 <strong>参考尺寸规范：</strong> {lightboxItem.dimensions}</p>
+                      <p>✨ <strong>镶嵌铺设料件：</strong> {lightboxItem.materials}</p>
+                      <p>🕒 <strong>手切精细工时：</strong> {lightboxItem.category === "original" ? "耗费 45 纯手工手刀切工时" : "3.5 课时手工新手心流"}</p>
                     </div>
 
                     <p className="text-slate-500 text-xs sm:text-sm font-sans leading-relaxed pt-2 border-t border-slate-100">
-                      This piece reflects the exquisite textures generated by arranging hand-cut stained glass into high-contrast grout structures, letting the colors shift and dance as the user walks past.
+                      这块杰作极尽色彩变幻之特色。通过将精细手切的古法彩色玻璃镶嵌到高对比度的嵌缝灰水泥基底中，散发出温润如玉、如海贝鳞光般随步履方向折射变色而律动的惊艳美感。
                     </p>
                   </div>
 
@@ -274,7 +274,7 @@ export default function Gallery({ onOpenBooking }: GalleryProps) {
                       lightboxItem.isAvailableForSale ? (
                         <>
                           <div>
-                            <span className="text-[10px] text-slate-400 block font-sans">Available Purchase</span>
+                            <span className="text-[10px] text-slate-400 block font-sans">现货原件售价</span>
                             <span className="text-xl font-display font-bold text-clay-800">${lightboxItem.price}</span>
                           </div>
                           <button
@@ -282,29 +282,29 @@ export default function Gallery({ onOpenBooking }: GalleryProps) {
                               setLightboxItem(null);
                               onOpenBooking("commission");
                             }}
-                            className="px-5 py-2.5 bg-clay-700 hover:bg-clay-800 text-white text-xs font-bold rounded-xl uppercase tracking-wider flex items-center gap-1.5 transition-all shadow cursor-pointer"
+                            className="px-5 py-2.5 bg-clay-600 hover:bg-clay-700 text-white text-xs font-bold rounded-xl uppercase tracking-wider flex items-center gap-1.5 transition-all shadow cursor-pointer"
                             id="buy-gallery-original-btn"
                           >
-                            <ShoppingBag className="w-3.5 h-3.5" /> Purchase Original
+                            <ShoppingBag className="w-3.5 h-3.5" /> 选购这一原作
                           </button>
                         </>
                       ) : (
                         <p className="text-xs text-slate-400 font-medium italic">
-                          🔒 Owned by private art collector in Sausalito, CA.
+                          🔒 尊贵家族版权珍藏自美国加州苏萨利托。
                         </p>
                       )
                     ) : (
                       <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between w-full gap-3">
-                        <p className="text-xs text-slate-500 font-sans">Make your own in class!</p>
+                        <p className="text-xs text-slate-500 font-sans">您也能在此做出专属艺术品！</p>
                         <button
                           onClick={() => {
                             setLightboxItem(null);
                             onOpenBooking("booking");
                           }}
-                          className="px-5 py-2.5 bg-clay-700 hover:bg-clay-800 text-white text-xs font-bold rounded-xl uppercase tracking-wider transition-all text-center cursor-pointer"
+                          className="px-5 py-2.5 bg-clay-600 hover:bg-clay-700 text-white text-xs font-bold rounded-xl tracking-wider transition-all text-center cursor-pointer"
                           id="make-class-from-gallery-btn"
                         >
-                          Book Course Schedule
+                          预选该体验课档期
                         </button>
                       </div>
                     )}

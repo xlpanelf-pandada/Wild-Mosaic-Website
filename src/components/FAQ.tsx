@@ -12,33 +12,33 @@ export default function FAQ({ onOpenBooking }: FAQProps) {
   const faqItems: FAQItem[] = [
     {
       id: "faq-1",
-      question: "Do I need drawing or painterly studio skills?",
-      answer: "Absolutely not! In fact, most of our masterclass graduates have never completed a professional art project in their lives. We provide pre-sketched design stencils, trace carbon transfers, and easy-to-follow geometric template sheets that help you piece together gorgeous patterns effortlessly. It is more about relaxation than perfect draftsmanship!"
+      question: "我需要具备美术、素描或设计基础吗？",
+      answer: "完全不需要！实际上，我们90%以上的结业学员在踏入工坊前都从未接触过任何艺术手作项目。我们会为您精心提供多套画册级的大师预构底稿设计、极易上手的复写纸和几何曼陀罗排布尺。在这里，享受拼贴色块带来的内心平和心流，往往远比起步时的画工更为迷人。"
     },
     {
       id: "faq-2",
-      question: "Are raw mosaic materials and tools included in the seat price?",
-      answer: "Yes, 100%! The booking tier covers everything you need to finish your creation: your backing frame (wooden trays, mirrors, coasters, or stone slate bases), a massive array of colored stained glass chips, hand-cut stone pebbles, Italian glass smalti, industrial clays, glue, grouting mortars, workspace safeties, wheeled glass nippers, and full apron usage."
+      question: "学费中是否包含了所有的材料耗材和防护工具？",
+      answer: "是的，百分百全包，到店后绝无任何隐性或二次消费！课程价格包含了您所需要的一切：实木杯垫板、进口加厚竹茶盘、天然重质板岩、或是定制画框镜。另外，意大利 Smalti 手工玻璃、彩色矿石、大教堂绚白玻璃等数百种晶石无限量配给，以及专业裁切玻璃钳和护目防尘镜的免费使用权。"
     },
     {
       id: "faq-3",
-      question: "Can I take my completed piece home the exact same day?",
-      answer: "You will finish layout gluing during the session! Once glued, the adhesive takes 12-24 hours to cure. You have two options: either we bundle a take-home grouting bucket kit with custom sealer instructions, or you leave your piece in our studio tables and we will professionally grout, clean, and seal your piece within 4 days for free local hand-pickup!"
+      question: "我在体验课当天就能拿走自己亲手剪切排布好的作品吗？",
+      answer: "您将在排期内完成作品的所有碎块拼拼与贴合上胶。拼贴胶水自然干透通常需要12至24个小时。对此我们提供两种方案：选择一，您可以带走我们赠送的手工灌浆工具袋，在家享受填泥收边和擦拭封口的光影成就。选择二，您可以把未干作品安全交由主创 Claire。我们将免费为您上浆、压实、修糙并精工封釉，4天后通知您自取或同城邮递。"
     },
     {
       id: "faq-4",
-      question: "Is the tile-nipping and glasswork completely safe?",
-      answer: "Safety is our priority. We utilize special wheeled dual-nippers that make crisp, clean glass separations by crushing rather than scoring, generating almost zero flying shards. We also provide secure, clean workspace safety glasses for every single student and supervise minor activities meticulously (Ages 10+ welcome!)."
+      question: "手工裁剪玻璃和石头碎瓷，过程安全吗？",
+      answer: "我们对于安全问题的防备精细在每一处细节。工坊提供无损双轮省力高压断块玻璃钳。它借助局部高刚力均匀剪断玻璃而非划线裁切，几乎不会产生飞舞残红。此外，工坊为每位学员准备了高透光无阻碍的专业护目目镜、耐磨连体围裙及环保指纹防护手套，提供全方位安全保驾。（欢迎10岁及以上儿童在家长陪同下体验！）"
     },
     {
       id: "faq-5",
-      question: "How do group passes, partnerships, or private parties work?",
-      answer: "We accommodate private anniversaries, birthday gatherings, or creative corporate events up to 12 people. If you select 2 people or more in our reservation drawer, our system reserves adjacent tables so you can craft together."
+      question: "多人结伴同行、闺蜜出游或生日 corporate 团建如何报名？",
+      answer: "工坊极为热忱地承接求婚周年纪念、生日狂欢、家庭团聚创意出游，或至多12人的高质感企业团建等。如果您在右下角的预约清单里选择2位或以上，系统将智能连座拼卡并锁定相邻的大桌，为陪伴增添更多舒心畅谈氛围。"
     },
     {
       id: "faq-6",
-      question: "What is your cancellation or date-swapping policy?",
-      answer: "We maintain highly flexible policies. If an emergency or sickness arises, simply notify us via email or call at least 24 hours prior to class time, and we will happily swap you into any future workshop seat for free."
+      question: "若临时行程发生变动，工坊取消或改期怎么安排？",
+      answer: "我们怀揣万分的体贴并提供高度的灵活变通！若是因为突发身体状况或难以推脱的差旅急事，只需在开课前 24 小时通知我们，客服或主创 Claire 将极速帮您调配、无损免费延换调签到接下来的任意一期同等体验课，免除您的后顾之忧。"
     }
   ];
 
@@ -52,12 +52,12 @@ export default function FAQ({ onOpenBooking }: FAQProps) {
         
         {/* Header Block */}
         <div className="text-center max-w-xl mx-auto mb-14" id="faq-heading-block">
-          <span className="text-xs font-bold text-clay-700 uppercase tracking-widest font-mono">RESOLVING CONCERNS</span>
+          <span className="text-xs font-bold text-clay-600 uppercase tracking-widest font-mono">释除各种顾虑</span>
           <h2 className="text-3xl sm:text-4xl font-display font-black text-slate-900 mt-2 tracking-tight">
-            Common Objections—Answered
+            有何疑惑？看这便一知半解
           </h2>
           <p className="text-slate-500 font-sans mt-3 text-sm sm:text-base">
-            Everything you need to know about safety, materials, booking flexibility, and finding our physical workspace.
+            关于安全、店中耗材配给、课时退改灵活性、以及探访工坊所需的细节全在其中。
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export default function FAQ({ onOpenBooking }: FAQProps) {
                 <button
                   type="button"
                   onClick={() => handleToggle(index)}
-                  className="w-full px-5 py-4 sm:py-5 flex items-center justify-between gap-4 text-left font-display font-bold text-slate-800 hover:text-clay-800 text-sm sm:text-base transition-colors"
+                  className="w-full px-5 py-4 sm:py-5 flex items-center justify-between gap-4 text-left font-display font-bold text-slate-800 hover:text-clay-650 text-sm sm:text-base transition-colors cursor-pointer"
                   aria-expanded={isOpen}
                   id={`faq-trigger-${index}`}
                 >
@@ -88,7 +88,7 @@ export default function FAQ({ onOpenBooking }: FAQProps) {
                   </span>
                   <span className="p-1 bg-white border border-slate-200 rounded-lg shadow-sm flex-shrink-0">
                     {isOpen ? (
-                      <Minus className="w-4 h-4 text-clay-700" />
+                      <Minus className="w-4 h-4 text-clay-600" />
                     ) : (
                       <Plus className="w-4 h-4 text-slate-600" />
                     )}
@@ -112,14 +112,14 @@ export default function FAQ({ onOpenBooking }: FAQProps) {
         {/* Bottom micro CTA to prompt conversion */}
         <div className="text-center mt-10">
           <p className="text-slate-500 text-xs sm:text-sm font-sans mb-4">
-            Still have an unresolved custom inquiry? Let's chat directly!
+            仍然有其他更富创意的艺术想法、品牌合作或特殊商用大单需求？直接与 Claire 本人一对一探讨吧！
           </p>
           <button
             onClick={onOpenBooking}
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-clay-100 hover:bg-clay-200 text-clay-800 text-xs font-bold rounded-xl tracking-wider uppercase transition-all cursor-pointer shadow-sm border border-clay-200"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-clay-100 hover:bg-clay-200 text-clay-800 text-xs font-bold rounded-xl tracking-widest uppercase transition-all cursor-pointer shadow-sm border border-clay-200"
             id="faq-sub-btn"
           >
-            Chat With Claire Now <ArrowRight className="w-3.5 h-3.5" />
+            直接留言给主创 Claire <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
 

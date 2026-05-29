@@ -3,29 +3,29 @@ import { Star, Award, Heart, Shield } from "lucide-react";
 export default function SocialProof() {
   const testimonials = [
     {
-      quote: "Absolute gold! It's unbelievably therapeutic. I came in stressed from work and left with a beautiful custom tray.Claire is a gentle and masterful guide.",
+      quote: "简直是神仙体验！制作过程出乎意料地静心治愈。我带着满身的工作疲惫而来，却在松弛的氛围中做出了如此精美的托盘。主创 Claire 的指导温柔又极其专业，赞不绝口！",
       author: "Sarah K.",
-      role: "Beginner Student",
+      role: "零基础学员",
       stars: 5,
     },
     {
-      quote: "My partner and I did the weekend session. The selection of Italian tiles is insane. It's so much fun to just listen to music and piece tiles together.",
+      quote: "上周末和伴侣一起报了双人体验班。这里陈列的意式奢华 smalti 手工水晶石料让人大开眼界。边听着舒缓音乐，边任凭灵感在指尖拼接色块，真的是最惬意的周末时光。",
       author: "Julian M.",
-      role: "Weekend Student",
+      role: "周末工坊体验学员",
       stars: 5,
     },
     {
-      quote: "Bespoke commissions are spectacular. I requested a dimensional backsplash design for my kitchen renovation, and she made it an absolute focal point.",
+      quote: "Claire 设计的私人艺术定制绝对是一绝。我为客户的豪宅别墅玄关处定制了一幅多维抽象浮雕彩色玻璃画屏。现在它成了整个空间当之无愧的灵魂主角。",
       author: "Evelyn R.",
-      role: "Interior Designer",
+      role: "资深室内设计师",
       stars: 5,
     },
   ];
 
   const trustBadges = [
-    { icon: <Award className="w-5 h-5 text-clay-700" />, text: "Certified Masterglass Guild Member" },
-    { icon: <Heart className="w-5 h-5 text-clay-700" />, text: "Top-Rated Creative Experience 2026" },
-    { icon: <Shield className="w-5 h-5 text-clay-700" />, text: "100% Eco-Friendly Recycled Sourcing" },
+    { icon: <Award className="w-5 h-5 text-clay-600" />, text: "受认证国际工艺美术师协会成员" },
+    { icon: <Heart className="w-5 h-5 text-clay-600" />, text: "2026年度最受欢迎创意手工体验" },
+    { icon: <Shield className="w-5 h-5 text-clay-600" />, text: "100% 绿色低碳天然环保矿石物料" },
   ];
 
   return (
@@ -43,7 +43,7 @@ export default function SocialProof() {
               <div className="p-1.5 bg-white rounded-lg shadow-sm border border-clay-100">
                 {badge.icon}
               </div>
-              <span className="text-xs font-semibold text-slate-700 tracking-wide uppercase font-sans">
+              <span className="text-xs font-semibold text-slate-700 tracking-wide font-sans">
                 {badge.text}
               </span>
             </div>
@@ -53,8 +53,8 @@ export default function SocialProof() {
         {/* 3 Columns Highlight Snippet Reviews */}
         <div className="pt-10" id="testimonials-grid">
           <div className="text-center max-w-xl mx-auto mb-8">
-            <h3 className="text-xs font-bold text-clay-700 uppercase tracking-widest font-mono mb-2">STUDENT REVIEWS</h3>
-            <p className="text-xl font-display font-medium text-slate-900">What it feels like behind the workspace tables</p>
+            <h3 className="text-xs font-bold text-clay-600 uppercase tracking-widest font-mono mb-2">学员真实心声</h3>
+            <p className="text-xl font-display font-medium text-slate-900">在这里，聆听指尖敲进艺术的清脆律动</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
