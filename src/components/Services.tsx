@@ -43,11 +43,11 @@ export default function Services({ workshops, onOpenBooking, seatsLeftMap }: Ser
   };
 
   return (
-    <section className="py-20 bg-clay-50" id="services-section">
+    <section className="py-12 md:py-20 bg-clay-50" id="services-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Title */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
           <span className="text-xs font-bold text-clay-600 uppercase tracking-widest font-mono">开启指尖与色彩的修行</span>
           <h2 className="text-3xl sm:text-4xl font-display font-black text-slate-900 mt-2 tracking-tight">
             选择属于您的艺术体验
@@ -58,7 +58,7 @@ export default function Services({ workshops, onOpenBooking, seatsLeftMap }: Ser
         </div>
 
         {/* Responsive Dual Column Engine */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
           
           {/* Card A: Studio Workshops (Beginners) */}
           <div 

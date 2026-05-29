@@ -47,11 +47,11 @@ export default function FAQ({ onOpenBooking }: FAQProps) {
   };
 
   return (
-    <section className="py-20 bg-white border-t border-clay-100" id="faq">
+    <section className="py-12 md:py-20 bg-white border-t border-clay-100" id="faq">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Block */}
-        <div className="text-center max-w-xl mx-auto mb-14" id="faq-heading-block">
+        <div className="text-center max-w-xl mx-auto mb-8 md:mb-14" id="faq-heading-block">
           <span className="text-xs font-bold text-clay-600 uppercase tracking-widest font-mono">释除各种顾虑</span>
           <h2 className="text-3xl sm:text-4xl font-display font-black text-slate-900 mt-2 tracking-tight">
             有何疑惑？看这便一知半解

@@ -9,9 +9,9 @@ export default function About() {
   ];
 
   return (
-    <section className="py-20 bg-clay-100" id="about">
+    <section className="py-12 md:py-20 bg-clay-100" id="about">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
           
           {/* Left Column - Founder Portrait Portrait */}
           <div className="lg:col-span-5 relative" id="about-image-column">

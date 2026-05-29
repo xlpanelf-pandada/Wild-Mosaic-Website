@@ -72,7 +72,7 @@ export default function Gallery({ onOpenBooking }: GalleryProps) {
   );
 
   return (
-    <section className="py-20 bg-white" id="gallery">
+    <section className="py-12 md:py-20 bg-white" id="gallery">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Block */}
@@ -88,7 +88,7 @@ export default function Gallery({ onOpenBooking }: GalleryProps) {
           </div>
 
           {/* Nav Filtering Tabs Selector */}
-          <div className="flex flex-wrap gap-1.5 p-1 bg-clay-50 border border-clay-100 rounded-xl" id="gallery-tab-container">
+          <div className="flex flex-nowrap overflow-x-auto gap-1 sm:flex-wrap sm:gap-1.5 p-1 bg-clay-50 border border-clay-100 rounded-xl max-w-full scrollbar-none" id="gallery-tab-container">
             <button
                onClick={() => setActiveFilter("all")}
               className={`px-4 py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
@@ -126,7 +126,7 @@ export default function Gallery({ onOpenBooking }: GalleryProps) {
         </div>
 
         {/* Dynamic Responsive Mosaic Columns Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid-items">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8" id="gallery-grid-items">
           {filteredItems.map((item) => (
             <div
               key={item.id}
@@ -236,7 +236,7 @@ export default function Gallery({ onOpenBooking }: GalleryProps) {
 
               <div className="grid grid-cols-1 md:grid-cols-2">
                 {/* Artwork view */}
-                <div className="relative aspect-square max-h-[500px] bg-slate-100">
+                <div className="relative aspect-[16/10] sm:aspect-square sm:max-h-[500px] bg-slate-100 flex-shrink-0">
                   <img
                     src={lightboxItem.image}
                     alt={lightboxItem.title}

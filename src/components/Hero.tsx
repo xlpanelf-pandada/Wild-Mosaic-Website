@@ -8,13 +8,13 @@ interface HeroProps {
 
 export default function Hero({ onOpenBooking }: HeroProps) {
   return (
-    <section className="relative pt-24 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-clay-50" id="hero-section">
+    <section className="relative pt-24 pb-12 md:pt-36 md:pb-24 overflow-hidden bg-clay-50" id="hero-section">
       {/* Background ambient accents */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-clay-200/20 rounded-full blur-3xl -z-10" />
       <div className="absolute -bottom-10 left-10 w-80 h-80 bg-art-amber/10 rounded-full blur-2xl -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           
           {/* Left Column - Copywriting & Action Blocks */}
           <div className="lg:col-span-7 space-y-6 text-left" id="hero-left-column">
@@ -80,7 +80,7 @@ export default function Hero({ onOpenBooking }: HeroProps) {
                 <img
                   src={heroImg}
                   alt="Sunny Mosaic Working Studio wooden table with glass pieces"
-                  className="w-full h-[320px] sm:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-[250px] xs:h-[320px] sm:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                   id="hero-rendered-banner"
                 />

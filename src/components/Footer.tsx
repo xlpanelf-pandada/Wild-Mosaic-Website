@@ -105,7 +105,7 @@ export default function Footer() {
       </div>
 
       {/* Structural Footer Columns */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="footer-midsections">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16" id="footer-midsections">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           
           {/* Column A: Logo Brand and Description */}

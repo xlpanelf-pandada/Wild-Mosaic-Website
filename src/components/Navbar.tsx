@@ -45,8 +45,8 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
             <span className="p-2 bg-clay-600 text-white rounded-xl shadow-md shadow-clay-600/15 group-hover:bg-clay-700 group-hover:rotate-6 transition-all duration-300">
               <Sparkles className="w-5 h-5" />
             </span>
-            <span className="font-display font-bold text-lg sm:text-xl tracking-tight text-slate-900 group-hover:text-clay-600 transition-colors">
-              Mosaic<span className="text-clay-600 font-light font-sans ml-1.5 text-xs sm:text-sm border-l border-slate-200 pl-1.5 uppercase tracking-wide">玛赛克艺术空间</span>
+            <span className="font-display font-bold text-base sm:text-xl tracking-tight text-slate-900 group-hover:text-clay-600 transition-colors">
+              Mosaic<span className="text-clay-600 font-light font-sans ml-1 xs:ml-1.5 text-[10px] xs:text-xs sm:text-sm border-l border-slate-200 pl-1 xs:pl-1.5 uppercase tracking-wide">玛赛克艺术空间</span>
             </span>
           </a>
 

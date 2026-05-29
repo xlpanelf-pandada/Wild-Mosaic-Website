@@ -29,11 +29,11 @@ export default function SocialProof() {
   ];
 
   return (
-    <section className="bg-white py-12 border-y border-clay-100" id="social-proof-ribbon">
+    <section className="bg-white py-8 md:py-16 border-y border-clay-100" id="social-proof-ribbon">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Institutional Trust Badges Area */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 items-center justify-between pb-10 border-b border-slate-100">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-4 items-center justify-between pb-8 md:pb-10 border-b border-slate-100">
           {trustBadges.map((badge, idx) => (
             <div 
               key={idx} 
@@ -51,13 +51,13 @@ export default function SocialProof() {
         </div>
 
         {/* 3 Columns Highlight Snippet Reviews */}
-        <div className="pt-10" id="testimonials-grid">
-          <div className="text-center max-w-xl mx-auto mb-8">
+        <div className="pt-8 md:pt-10" id="testimonials-grid">
+          <div className="text-center max-w-xl mx-auto mb-6 md:mb-8">
             <h3 className="text-xs font-bold text-clay-600 uppercase tracking-widest font-mono mb-2">学员真实心声</h3>
             <p className="text-xl font-display font-medium text-slate-900">在这里，聆听指尖敲进艺术的清脆律动</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             {testimonials.map((test, idx) => (
               <div 
                 key={idx} 

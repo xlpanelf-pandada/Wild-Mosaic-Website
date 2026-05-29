@@ -115,7 +115,7 @@ export default function BookingForm({ isOpen, onClose, selectedWorkshopId, works
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4">
         {/* Backdrop */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -128,10 +128,10 @@ export default function BookingForm({ isOpen, onClose, selectedWorkshopId, works
 
         {/* Modal Window */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.95, y: 20 }}
+          initial={{ opacity: 0, scale: 0.95, y: 15 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.95, y: 20 }}
-          className="relative z-10 w-full max-w-lg overflow-hidden rounded-2xl bg-white shadow-2xl border border-clay-100"
+          exit={{ opacity: 0, scale: 0.95, y: 15 }}
+          className="relative z-10 w-full max-w-lg max-h-[92vh] sm:max-h-[85vh] flex flex-col overflow-hidden rounded-2xl bg-white shadow-2xl border border-clay-100"
           id="booking-modal-container"
         >
           {/* Header */}
@@ -179,7 +179,7 @@ export default function BookingForm({ isOpen, onClose, selectedWorkshopId, works
           )}
 
           {/* Content Area */}
-          <div className="p-6 max-h-[75vh] overflow-y-auto">
+          <div className="p-4 sm:p-6 overflow-y-auto flex-1">
             {success ? (
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
